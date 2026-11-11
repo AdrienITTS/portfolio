@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "available": "Open to Lead Developer roles",
+    "downloadCv": "Download resume (PDF, French)",
+    "contactMe": "Get in touch"
+  },
+  "sections": {
+    "skills": "Skills",
+    "strengths": "How I work",
+    "experience": "Experience",
+    "projects": "Side projects",
+    "background": "Education and languages",
+    "education": "Education",
+    "languages": "Languages",
+    "contact": "Contact"
+  },
+  "contact": {
+    "text": "For a Lead Dev role, a contract or a technical question, write to me.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "lang": {
+    "switch": "Lire en français"
+  },
+  "footer": {
+    "built": "Built with Nuxt and Tailwind, hosted on my own VPS."
+  }
+}

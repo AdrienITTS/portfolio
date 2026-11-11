@@ -1,0 +1,232 @@
+name: Adrien Deprez
+role: Lead Developer · Ingénieur full stack senior
+tagline: 9 ans de full stack dans le retail et le SaaS
+location: Lille
+intro: >-
+  Je développe depuis 9 ans, surtout pour le retail (Leroy Merlin, ADEO, Norauto) et pour du SaaS.
+  Je prends en charge un produit en entier : je cadre le besoin avec le métier, je conçois
+  l'architecture, je code le front et le back, puis je suis la mise en production et le monitoring.
+  Aujourd'hui je cherche un poste de Lead Developer, pour concevoir, accompagner une équipe et
+  tenir la qualité de ce qu'elle livre.
+
+seo:
+  title: Adrien Deprez · Lead Developer full stack à Lille
+  description: >-
+    Ingénieur full stack senior à Lille (TypeScript, NestJS, Vue, Java, Spring, Kafka, GCP).
+    9 ans d'expérience, CV, compétences et projets personnels.
+
+contact:
+  email: adrien.deprez.fr@gmail.com
+  linkedin: https://www.linkedin.com/in/adrien-deprez-fr
+  github: https://github.com/AdrienITTS
+
+highlights:
+  - value: '9 ans'
+    label: de développement full stack, du front à l'exploitation
+  - value: 'Métier ↔ Tech'
+    label: le relais entre le métier et les développeurs, du cadrage à la livraison
+  - value: 'Craft pragmatique'
+    label: tests, CI/CD et revues de code, dosés selon ce qu'il faut livrer
+
+skills:
+  - group: Langages
+    items: [TypeScript, JavaScript, Java]
+  - group: Backend
+    items: [Node.js, NestJS, Spring Boot, API REST, Kafka]
+  - group: Frontend
+    items: [Vue.js, Nuxt, Angular]
+  - group: Données
+    items: [PostgreSQL, Prisma, BigQuery, NoSQL]
+  - group: Cloud et ops
+    items: [GCP, Docker, Kubernetes (GKE), Terraform, GitHub Actions, Jenkins]
+  - group: Observabilité
+    items: [Datadog, Prometheus]
+  - group: Pratiques
+    items:
+      [
+        Software craftsmanship,
+        Clean Code,
+        Pragmatic Programmer,
+        Architecture,
+        Tests automatisés,
+        CI/CD,
+        Agilité,
+      ]
+
+strengths:
+  - title: Résoudre des problèmes métier
+    text: >-
+      Pour moi, l'informatique est d'abord un outil au service du métier. J'aime suivre un problème
+      de bout en bout : en parler avec les utilisateurs, recueillir le besoin, concevoir la solution,
+      puis la construire et la faire vivre en production.
+    steps:
+      [
+        Échanges et besoin,
+        Conception,
+        Architecture,
+        Back et front,
+        Ops et CI/CD,
+        Industrialisation,
+        Monitoring,
+      ]
+  - title: Craft et pragmatisme
+    text: >-
+      Je suis attaché au software craftsmanship, au clean code et à l'esprit Pragmatic Programmer.
+      J'essaie de faire le moins de choses possible, le plus proprement possible, pour obtenir le plus
+      de résultat. J'applique ces principes au cas par cas, sans en faire des dogmes.
+  - title: Faire grandir l'équipe
+    text: >-
+      Je partage ce que je sais : documentation, pair programming, revues bienveillantes, onboarding
+      soigné. Mon but est que l'équipe livre bien même quand je ne suis pas là.
+  - title: Décider sur des faits
+    text: >-
+      Face à un choix technique, je compare quelques options sur des critères explicites : besoin,
+      coût de maintenance, réversibilité. Si on hésite, un POC court tranche, et la décision est
+      notée dans un ADR.
+
+experience:
+  - company: ADEO
+    title: Ingénieur senior full stack
+    context: Freelance · équipe Customer Project · Lille
+    period: janv. 2024 – aujourd'hui
+    summary: >-
+      Je porte la responsabilité technique de l'équipe : je pilote ses sujets de la conception à la
+      mise en production et je fixe ses standards de qualité.
+    points:
+      - >-
+        Qualifier Studio : un monorepo (une API NestJS, trois SPA Vue.js) avec lequel le métier crée
+        et pilote les questionnaires de qualification client des parcours Leroy Merlin. J'ai fait le
+        modèle de données, l'authentification multi-stratégies et le déploiement en conteneurs.
+      - >-
+        API d'orchestration des rendez-vous : elle relie le SaaS de prise de rendez-vous aux systèmes
+        ADEO, avec la conformité RGPD, les notifications et un pipeline de données.
+      - >-
+        Référentiel Projet Client : l'API qui fait foi sur le cycle de vie des projets clients
+        (qualifications, estimations, rendez-vous) pour tout l'écosystème.
+      - Dashboards Datadog et analyses d'usage dans BigQuery, qui servent aux décisions produit.
+      - Pipelines CI/CD, tests automatisés et linters mis en place dans l'équipe.
+    stack:
+      [
+        Node.js,
+        NestJS,
+        Vue.js,
+        TypeScript,
+        PostgreSQL,
+        Prisma,
+        Docker,
+        Terraform,
+        Kafka,
+        GCP,
+        BigQuery,
+        Datadog,
+      ]
+
+  - company: Dewizz
+    title: Ingénieur full stack (consultant)
+    context: Missions grands comptes et projets internes · Lille
+    period: févr. 2019 – déc. 2023
+    missions:
+      - title: Affilizz · SaaS d'affiliation
+        period: juin 2022 – déc. 2023
+        summary: >-
+          Affilizz aide les médias et les créateurs de contenu à gérer leur affiliation : accès aux
+          programmes des marques, création de contenus affiliés, suivi des revenus. J'ai renforcé
+          l'équipe produit en full stack.
+        points:
+          - Développement sur toute la chaîne (front, back, ops, CI/CD), en Angular / TypeScript et Java / Spring.
+        stack: [Angular, TypeScript, Java, Spring, CI/CD]
+      - title: Norauto · équipe BWC
+        period: juil. 2021 – juin 2022
+        summary: >-
+          Arrivé en renfort, j'ai pris le lead technique du back et accompagné l'équipe vers les
+          bonnes pratiques Java, l'événementiel et l'asynchrone.
+        points:
+          - Conception et développement de l'API de niveau 2, qui agrège les données produits de plusieurs sources.
+          - Estimation, conteneurisation Docker / Kubernetes et pipelines CI/CD.
+        stack: [Java, Spring Boot, Docker, Kubernetes, CI/CD]
+      - title: ADEO · Marketplace Leroy Merlin, équipe Tempo Composer
+        period: mai 2019 – juil. 2021
+        summary: Dans l'équipe qui refondait la commande, j'ai posé les bases techniques du nouveau tunnel.
+        points:
+          - >-
+            Conception du nouveau tunnel de commande, événementiel et asynchrone : produits 1P,
+            marketplace 3P et services, en ligne comme en magasin, pour cinq pays (France, Espagne,
+            Portugal, Italie, Pologne).
+          - Architecture de référence Spring / Kafka et stratégie de tests.
+          - Métriques Prometheus et Datadog, pipelines GitHub Actions, déploiement sur GKE.
+        stack: [Java, Spring, Kafka, Prometheus, Datadog, GitHub Actions, GKE]
+      - title: Projet interne · gamerprices.fr
+        period: ''
+        summary: >-
+          Un comparateur de prix de jeux vidéo, projet interne de Dewizz, que j'ai développé du front
+          jusqu'au déploiement.
+        points:
+          - Front en Angular, back en Java / Spring, CI/CD sur GitHub Actions.
+          - Impression automatisée des factures et des documents avec Puppeteer.
+        stack: [Angular, Java, Spring, Puppeteer, GitHub Actions]
+
+  - company: CGI
+    title: Ingénieur full stack junior
+    context: Lille
+    period: févr. 2017 – févr. 2019
+    missions:
+      - title: Leroy Merlin · Outils d'aide à l'achat
+        period: sept. 2017 – mai 2019
+        summary: Responsable technique du RUN, puis lead frontend sur le BUILD une fois le RUN stabilisé.
+        points:
+          - 'RUN : stabilité, correctifs, déploiements, audit et refactoring du code existant.'
+          - "BUILD : conception de nouvelles applications, dont Verrière, et montée en compétence de l'équipe."
+          - Pipelines CI/CD Jenkins et GitLab.
+        stack: [Java, Angular, Node.js, Jenkins, GitLab, Docker]
+      - title: ShowCase CGI
+        period: févr. – juil. 2017
+        points:
+          - 'Ma première mission chez CGI : des applications web et desktop, des web services et une base NoSQL.'
+        stack: [Vue.js, Electron, Angular, Node.js, NoSQL]
+
+  - company: GETEC
+    title: Responsable informatique
+    context: Stage puis CDD
+    period: 2014 – 2015
+    summary: >-
+      Mes premières responsabilités : gérer les outils informatiques de l'entreprise et encadrer une
+      petite équipe.
+    points:
+      - Pilotage des applications de devis et de gestion des tâches.
+      - Déploiement de l'ERP Divalto.
+      - Encadrement d'une équipe de trois personnes.
+
+projects:
+  - name: 40k Team Pairing
+    text: >-
+      Une application web pour les tournois Warhammer 40K par équipes. Elle calcule les
+      appariements, déroule les missions d'une ronde et compte les points selon les règles
+      officielles, avec des fiches de référence pour les factions et les déploiements.
+    stack: [Vue 3, TypeScript, Vite, Vitest, Playwright]
+    links:
+      - label: Code source
+        url: https://github.com/AdrienITTS/40K-team-pairing
+  - name: Serveur auto-hébergé
+    text: >-
+      Un VPS que j'administre seul : services en conteneurs Docker derrière un reverse proxy
+      Caddy, sauvegardes chiffrées, monitoring, VPN, et déploiement continu depuis GitHub Actions.
+      J'en documente l'installation et l'exploitation. Ce site tourne dessus.
+    stack: [Docker, Caddy, GitHub Actions, Restic, Uptime Kuma, VPN]
+    links: []
+projectsNote: C'est là que j'apprends et que j'essaie les outils qui m'intéressent.
+
+education:
+  - title: Diplôme d'ingénieur en informatique
+    school: IG2I, Centrale Lille
+    period: 2012 – 2017
+  - title: Baccalauréat scientifique
+    school: Lycée Saint-Paul
+    period: '2012'
+
+languages:
+  - name: Français
+    level: natif
+  - name: Anglais
+    level: professionnel (4 mois en Australie)
+  - name: Allemand
+    level: notions

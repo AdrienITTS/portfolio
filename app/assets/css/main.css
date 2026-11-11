@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+/* Dark mode follows the `.dark` class set by @nuxtjs/color-mode. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/inter-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Grotesk';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/grotesk-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Grotesk';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/grotesk-700.woff2') format('woff2');
+}
+
+/* Same palette as the printed CV, plus a dark counterpart. Components only use these tokens. */
+:root {
+  --c-bg: #f7f9fc;
+  --c-surface: #ffffff;
+  --c-navy: #16233f;
+  --c-accent: #2f5aa8;
+  --c-ink: #232a36;
+  --c-muted: #5d6677;
+  --c-line: #d8deea;
+  --c-tint: #eef2f9;
+  --c-hero: #16233f;
+  --c-hero-ink: #e8eef9;
+}
+
+.dark {
+  --c-bg: #0d1424;
+  --c-surface: #131c31;
+  --c-navy: #e6ecf8;
+  --c-accent: #8fb1ee;
+  --c-ink: #d3dae7;
+  --c-muted: #97a2b8;
+  --c-line: #26324d;
+  --c-tint: #1a2540;
+  --c-hero: #0a101d;
+  --c-hero-ink: #e8eef9;
+}
+
+@theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Grotesk', 'Inter', ui-sans-serif, sans-serif;
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-navy: var(--c-navy);
+  --color-accent: var(--c-accent);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-tint: var(--c-tint);
+  --color-hero: var(--c-hero);
+  --color-hero-ink: var(--c-hero-ink);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-white;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

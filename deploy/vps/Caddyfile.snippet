@@ -1,0 +1,9 @@
+# Add to ~/stacks/proxy/Caddyfile on the VPS, then validate and restart Caddy.
+adrienitts.com {
+	reverse_proxy portfolio:80
+}
+
+# www is covered by the *.adrienitts.com wildcard: send it to the bare domain.
+www.adrienitts.com {
+	redir https://adrienitts.com{uri} permanent
+}

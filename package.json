@@ -1,0 +1,47 @@
+{
+  "name": "adrien-deprez-portfolio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "serve .output/public -l 4173",
+    "postinstall": "nuxt prepare",
+    "sync:cv": "node scripts/sync-cv.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.17.0",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.10.0",
+    "serve": "^14.2.7",
+    "typescript": "~6.0.0",
+    "vitest": "^5.1.0",
+    "vue-tsc": "^3.3.14",
+    "yaml": "^2.9.1"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.16.2",
+    "@nuxtjs/color-mode": "^4.1.0",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "esbuild": "^0.28.2",
+    "nuxt": "^4.6.4",
+    "tailwindcss": "^4.3.5",
+    "zod": "^4.6.7"
+  }
+}

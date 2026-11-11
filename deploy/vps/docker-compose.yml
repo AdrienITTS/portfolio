@@ -1,0 +1,12 @@
+# Copy to ~/stacks/portfolio/docker-compose.yml on the VPS.
+services:
+  portfolio:
+    image: ghcr.io/adrienitts/portfolio:${IMAGE_TAG:-latest}
+    container_name: portfolio
+    restart: unless-stopped
+    networks:
+      - web
+
+networks:
+  web:
+    external: true

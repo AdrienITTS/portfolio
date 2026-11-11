@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact",
+    "skip": "Aller au contenu"
+  },
+  "hero": {
+    "available": "Ouvert à un poste de Lead Developer",
+    "downloadCv": "Télécharger le CV (PDF)",
+    "contactMe": "Me contacter"
+  },
+  "sections": {
+    "skills": "Compétences",
+    "strengths": "Ma façon de travailler",
+    "experience": "Expérience",
+    "projects": "Projets personnels",
+    "background": "Formation et langues",
+    "education": "Formation",
+    "languages": "Langues",
+    "contact": "Contact"
+  },
+  "contact": {
+    "text": "Pour un poste de Lead Dev, une mission ou une question technique, écrivez-moi.",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "theme": {
+    "toLight": "Passer en thème clair",
+    "toDark": "Passer en thème sombre"
+  },
+  "lang": {
+    "switch": "Read in English"
+  },
+  "footer": {
+    "built": "Site fait avec Nuxt et Tailwind, hébergé sur mon VPS."
+  }
+}

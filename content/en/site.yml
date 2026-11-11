@@ -1,0 +1,227 @@
+name: Adrien Deprez
+role: Lead Developer · Senior full stack engineer
+tagline: 9 years of full stack work in retail and SaaS
+location: Lille, France
+intro: >-
+  I've been building software for 9 years, mostly for retail (Leroy Merlin, ADEO, Norauto) and SaaS.
+  I take a product all the way: I work out the need with the business, design the architecture,
+  write the front end and the back end, then look after the release and the monitoring.
+  I'm now looking for a Lead Developer role: designing systems, supporting a team and keeping the
+  quality of its work high.
+
+seo:
+  title: Adrien Deprez · Full stack Lead Developer in Lille
+  description: >-
+    Senior full stack engineer in Lille, France (TypeScript, NestJS, Vue, Java, Spring, Kafka, GCP).
+    9 years of experience, resume, skills and side projects.
+
+contact:
+  email: adrien.deprez.fr@gmail.com
+  linkedin: https://www.linkedin.com/in/adrien-deprez-fr
+  github: https://github.com/AdrienITTS
+
+highlights:
+  - value: '9 years'
+    label: of full stack work, from front end to operations
+  - value: 'Business ↔ Tech'
+    label: the link between the business and the developers, from scoping to delivery
+  - value: 'Pragmatic craft'
+    label: tests, CI/CD and code review, sized to what has to ship
+
+skills:
+  - group: Languages
+    items: [TypeScript, JavaScript, Java]
+  - group: Back end
+    items: [Node.js, NestJS, Spring Boot, REST APIs, Kafka]
+  - group: Front end
+    items: [Vue.js, Nuxt, Angular]
+  - group: Data
+    items: [PostgreSQL, Prisma, BigQuery, NoSQL]
+  - group: Cloud and ops
+    items: [GCP, Docker, Kubernetes (GKE), Terraform, GitHub Actions, Jenkins]
+  - group: Observability
+    items: [Datadog, Prometheus]
+  - group: Practices
+    items:
+      [
+        Software craftsmanship,
+        Clean Code,
+        Pragmatic Programmer,
+        Architecture,
+        Automated testing,
+        CI/CD,
+        Agile,
+      ]
+
+strengths:
+  - title: Solving business problems
+    text: >-
+      To me, software is first a tool for the business. I like to follow a problem from start to
+      finish: talk it through with users, gather the need, design the solution, then build it and
+      keep it running in production.
+    steps:
+      [
+        Talks and needs,
+        Design,
+        Architecture,
+        Back and front end,
+        Ops and CI/CD,
+        Industrialisation,
+        Monitoring,
+      ]
+  - title: Craft and pragmatism
+    text: >-
+      I care about software craftsmanship, clean code and the Pragmatic Programmer mindset. I try to
+      do as little as possible, as cleanly as possible, for the most result. I apply these principles
+      case by case, not as dogma.
+  - title: Growing the team
+    text: >-
+      I share what I know: documentation, pair programming, kind code reviews, careful onboarding. The
+      goal is a team that ships well even when I'm not around.
+  - title: Deciding on facts
+    text: >-
+      When facing a technical choice, I compare a few options against explicit criteria: need,
+      maintenance cost, reversibility. If we're still unsure, a short POC settles it, and the decision
+      goes into an ADR.
+
+experience:
+  - company: ADEO
+    title: Senior full stack engineer
+    context: Freelance · Customer Project team · Lille
+    period: Jan 2024 – present
+    summary: >-
+      I'm the team's technical lead: I drive its topics from design to production and set its
+      quality standards.
+    points:
+      - >-
+        Qualifier Studio: a monorepo (one NestJS API, three Vue.js SPAs) the business uses to build
+        and run the customer qualification questionnaires in Leroy Merlin's online journeys. I did
+        the data model, multi-strategy authentication and containerised deployment.
+      - >-
+        Appointment orchestration API: it connects the appointment-booking SaaS to ADEO's systems,
+        with GDPR compliance, notifications and a data pipeline.
+      - >-
+        Customer Project repository: the API that is the source of truth for the customer project
+        lifecycle (qualifications, estimates, appointments) across the ecosystem.
+      - Datadog dashboards and BigQuery usage analysis that feed product decisions.
+      - Set up CI/CD pipelines, automated tests and linters for the team.
+    stack:
+      [
+        Node.js,
+        NestJS,
+        Vue.js,
+        TypeScript,
+        PostgreSQL,
+        Prisma,
+        Docker,
+        Terraform,
+        Kafka,
+        GCP,
+        BigQuery,
+        Datadog,
+      ]
+
+  - company: Dewizz
+    title: Full stack engineer (consultant)
+    context: Client engagements and internal projects · Lille
+    period: Feb 2019 – Dec 2023
+    missions:
+      - title: Affilizz · affiliate marketing SaaS
+        period: Jun 2022 – Dec 2023
+        summary: >-
+          Affilizz helps media outlets and content creators run their affiliate business: access to
+          brand programmes, affiliate content, revenue tracking. I joined the product team as a full
+          stack engineer.
+        points:
+          - Work across the whole chain (front end, back end, ops, CI/CD), in Angular / TypeScript and Java / Spring.
+        stack: [Angular, TypeScript, Java, Spring, CI/CD]
+      - title: Norauto · BWC team
+        period: Jul 2021 – Jun 2022
+        summary: >-
+          I came in to reinforce the team, took the technical lead on the back end and helped the team
+          adopt Java good practices, event-driven design and asynchronous processing.
+        points:
+          - Designed and built the level-2 API, which aggregates product data from several sources.
+          - Estimation, Docker / Kubernetes packaging and CI/CD pipelines.
+        stack: [Java, Spring Boot, Docker, Kubernetes, CI/CD]
+      - title: ADEO · Leroy Merlin Marketplace, Tempo Composer team
+        period: May 2019 – Jul 2021
+        summary: In the team rebuilding the ordering flow, I laid the technical foundations of the new checkout.
+        points:
+          - >-
+            Designed the new event-driven, asynchronous checkout: 1P products, the 3P marketplace and
+            services, online and in store, for five countries (France, Spain, Portugal, Italy, Poland).
+          - Spring / Kafka reference architecture and testing strategy.
+          - Prometheus and Datadog metrics, GitHub Actions pipelines, deployment on GKE.
+        stack: [Java, Spring, Kafka, Prometheus, Datadog, GitHub Actions, GKE]
+      - title: Internal project · gamerprices.fr
+        period: ''
+        summary: A video game price comparison site, an internal Dewizz project I built from front end to deployment.
+        points:
+          - Angular front end, Java / Spring back end, CI/CD on GitHub Actions.
+          - Automated printing of invoices and documents with Puppeteer.
+        stack: [Angular, Java, Spring, Puppeteer, GitHub Actions]
+
+  - company: CGI
+    title: Junior full stack engineer
+    context: Lille
+    period: Feb 2017 – Feb 2019
+    missions:
+      - title: Leroy Merlin · Purchase support tools
+        period: Sep 2017 – May 2019
+        summary: Technical owner of the RUN, then front-end lead on the BUILD once the RUN was stable.
+        points:
+          - 'RUN: stability, fixes, releases, audit and refactoring of the existing code.'
+          - 'BUILD: designed new applications, including Verrière, and helped the team build its skills.'
+          - Jenkins and GitLab CI/CD pipelines.
+        stack: [Java, Angular, Node.js, Jenkins, GitLab, Docker]
+      - title: CGI ShowCase
+        period: Feb – Jul 2017
+        points:
+          - 'My first CGI assignment: web and desktop applications, web services and a NoSQL database.'
+        stack: [Vue.js, Electron, Angular, Node.js, NoSQL]
+
+  - company: GETEC
+    title: IT manager
+    context: Internship, then fixed-term contract
+    period: 2014 – 2015
+    summary: "My first responsibilities: running the company's IT tools and managing a small team."
+    points:
+      - Ran the quoting and task management applications.
+      - Rolled out the Divalto ERP.
+      - Managed a team of three.
+
+projects:
+  - name: 40k Team Pairing
+    text: >-
+      A web app for team Warhammer 40K tournaments. It works out pairings, walks through the
+      missions of a round and tallies the score under the official rules, with reference pages for
+      factions and deployments.
+    stack: [Vue 3, TypeScript, Vite, Vitest, Playwright]
+    links:
+      - label: Source code
+        url: https://github.com/AdrienITTS/40K-team-pairing
+  - name: Self-hosted server
+    text: >-
+      A VPS I run on my own: Docker services behind a Caddy reverse proxy, encrypted backups,
+      monitoring, a VPN, and continuous deployment from GitHub Actions. I write up how it's built
+      and run. This site is hosted on it.
+    stack: [Docker, Caddy, GitHub Actions, Restic, Uptime Kuma, VPN]
+    links: []
+projectsNote: This is where I learn and try out the tools I'm curious about.
+
+education:
+  - title: Master's degree in computer engineering
+    school: IG2I, Centrale Lille
+    period: 2012 – 2017
+  - title: French scientific baccalaureate
+    school: Lycée Saint-Paul
+    period: '2012'
+
+languages:
+  - name: French
+    level: native
+  - name: English
+    level: professional (4 months in Australia)
+  - name: German
+    level: basic
