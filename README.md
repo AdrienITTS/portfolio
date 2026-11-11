@@ -90,27 +90,47 @@ The pipeline follows my Notion guide "Perso › Projets › VPS › 3 · Déploi
 
 ### One-time setup
 
+This is already done for `AdrienITTS/portfolio`. The steps are kept here to rebuild the setup, for
+example after reinstalling the VPS or rotating the deploy key.
+
+On your machine, create a deploy key used only by the workflow:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/deploy_portfolio -N "" -C deploy-portfolio
+```
+
 On GitHub:
 
 - Create the repository and push it. The workflow lowercases the image name, so `AdrienITTS` is fine.
 - After the first build, make the `ghcr.io` package public (Package settings → Change visibility),
   so the VPS can pull it without a token.
-- Add the secrets `VPS_HOST`, `VPS_USER`, `VPS_SSH_KEY` and `VPS_KNOWN_HOSTS`
-  (`ssh-keyscan -t ed25519 <vps-ip>`).
+- Add the four secrets. `gh secret set` reads the private key from the file, so it never shows up
+  in the terminal:
+
+  ```bash
+  gh secret set VPS_SSH_KEY -R AdrienITTS/portfolio < ~/.ssh/deploy_portfolio
+  ssh-keyscan -t ed25519 <vps-ip> | gh secret set VPS_KNOWN_HOSTS -R AdrienITTS/portfolio
+  gh secret set VPS_HOST -R AdrienITTS/portfolio -b <vps-ip>
+  gh secret set VPS_USER -R AdrienITTS/portfolio -b adrien
+  ```
+
 - Optional: a repository variable `SITE_URL` if the site is not on `https://adrienitts.com`.
 
-On the VPS, using the files in `deploy/vps/`:
+On the VPS, fetch the files from `deploy/vps/` and start the container:
 
 ```bash
 mkdir -p ~/stacks/portfolio ~/stacks/bin
-# copy deploy/vps/docker-compose.yml   -> ~/stacks/portfolio/docker-compose.yml
-#      deploy/vps/deploy-portfolio.sh  -> ~/stacks/bin/deploy-portfolio.sh (chmod +x)
+RAW=https://raw.githubusercontent.com/AdrienITTS/portfolio/main/deploy/vps
+curl -fsSL "$RAW/docker-compose.yml" -o ~/stacks/portfolio/docker-compose.yml
+curl -fsSL "$RAW/deploy-portfolio.sh" -o ~/stacks/bin/deploy-portfolio.sh
+chmod +x ~/stacks/bin/deploy-portfolio.sh
 cd ~/stacks/portfolio && echo "IMAGE_TAG=latest" > .env && docker compose up -d
 ```
 
 Check that the image name in `docker-compose.yml` matches the GitHub repository (lowercase).
 
-Then add the deploy key to `~/.ssh/authorized_keys`, below your own key, with the forced command:
+Then add the public deploy key (`~/.ssh/deploy_portfolio.pub`) to `~/.ssh/authorized_keys`, below
+your own key, with the forced command:
 
 ```text
 command="/home/adrien/stacks/bin/deploy-portfolio.sh",no-agent-forwarding,no-port-forwarding,no-pty,no-X11-forwarding,no-user-rc ssh-ed25519 AAAA... deploy-portfolio
@@ -119,7 +139,15 @@ command="/home/adrien/stacks/bin/deploy-portfolio.sh",no-agent-forwarding,no-por
 Add the block from `deploy/vps/Caddyfile.snippet` to the front Caddy config, validate it and restart
 Caddy.
 
-### Roll back
+### Redeploy or roll back
+
+To retry a deployment that failed, rerun only the failed job: the image is already on ghcr.io.
+
+```bash
+gh run rerun <run-id> -R AdrienITTS/portfolio --failed
+```
+
+To go back to an earlier version, deploy its tag with the same key the workflow uses:
 
 ```bash
 ssh -i ~/.ssh/deploy_portfolio adrien@<vps-ip> "sha-1a2b3c4"

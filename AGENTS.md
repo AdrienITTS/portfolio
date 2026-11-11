@@ -41,5 +41,8 @@ the browser (desktop and mobile, light and dark).
 
 ## Deployment
 
-A push to `main` runs the checks, builds the image, pushes it to ghcr.io and deploys it to the VPS
-over SSH (see the README). Never commit, push or deploy without Adrien's explicit request.
+The repository is public on GitHub (`AdrienITTS/portfolio`) and the site is live. A push to `main`
+runs the checks, builds the image, pushes it to `ghcr.io/adrienitts/portfolio` and deploys it to the
+VPS over SSH (see the README). Everything on the VPS (`~/stacks/portfolio`, the front Caddy,
+`authorized_keys`) is changed by Adrien, not from this repository. Never commit, push or deploy
+without Adrien's explicit request.
